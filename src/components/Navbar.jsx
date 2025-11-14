@@ -9,18 +9,23 @@ const Navbar = () => {
       <div className="px-4 py-4 flex items-center justify-between">
         <Logo />
 
-        <div className="relative hidden xs:block">
+        {/* <Link to="/search" className="relative bg-red-500 rounded-xl">
           <Search
             className="absolute top-1/2 -translate-y-[50%] left-1  text-white "
             size={28}
           />
-          <Link
-            to="/search"
-            className="bg-red-500 text-white px-10 py-4 rounded-xl font-bold hover:bg-red-700 transition-colors flex items-center gap-2"
+          <div
+            
+            className="bg-red-500 hidden text-white px-10 py-4 rounded-xl font-bold hover:bg-red-700 transition-colors md:flex items-center gap-2"
           >
             Search Blood
-          </Link>
-        </div>
+          </div>
+        </Link> */}
+
+        <Link to="/search" className="border border-red-500 flex items-center justify-center gap-2 bg-red-500 text-white px-2.5  py-1.5 sm:px-3 sm:py-2 md:px-4 md:py-3 rounded-xl ">
+          <Search size={28}/>
+          <p className="font-bold hidden xs:block">Search blood</p>
+        </Link>
       </div>
     </div>
 
